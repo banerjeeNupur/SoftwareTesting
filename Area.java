@@ -1,12 +1,10 @@
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Find the area of various geometric shapes
- */
+// This class calculates the Area of different shapes
+
+
 public class Area {
 
     public static void main(String[] args) throws IOException {

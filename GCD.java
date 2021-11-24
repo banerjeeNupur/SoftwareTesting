@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// This class converts the GCD of 2 numbers
+
+
 public class GCD {
 
 
