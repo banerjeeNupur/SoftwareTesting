@@ -1,3 +1,4 @@
+package Maths;
 import java.util.*;
 
 // A magic square of order n is an arrangement of distinct n^2 integers,in a square, such that the n numbers in all
