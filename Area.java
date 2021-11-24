@@ -11,7 +11,6 @@ public class Area {
 
     public static void main(String[] args) throws IOException {
 
-        /* test cube */
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter choice : \n1. SurfaceAreaCube\n2. SurfaceAreaSphere\n3. SurfaceAreaCone"+
