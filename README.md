@@ -14,3 +14,8 @@
 3. Search
   - BinarySearch
   - LinearSearch
+
+4. Sort
+  - InsertionSort
+  - BubbleSort
+  - CountingSort
