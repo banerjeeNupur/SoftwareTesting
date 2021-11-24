@@ -14,7 +14,8 @@ class LinearSearch
         System.out.println("Enter numbers:");
         String in[] = br.readLine().split("\\s+");
         int arr[] = new int[in.length];
-        for(int i=0;i<in.length;i++) arr[i] = Integer.parseInt(in[i]);
+        for(int i=0;i<in.length;i++) 
+         arr[i] = Integer.parseInt(in[i]);
 
         System.out.println("Enter target: ");
         int x = Integer.parseInt(br.readLine());
