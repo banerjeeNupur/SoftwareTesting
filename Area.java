@@ -24,31 +24,31 @@ public class Area {
         switch(input){
             case 1: System.out.println("Enter sidelength: ");
             double  sideLength = Double.parseDouble(br.readLine());
-            ans = surfaceAreaCube(sideLength);
+            ans = 6 * sideLength * sideLength;
             break;
 
             case 2: System.out.println("Enter radius: ");
             double  radius = Double.parseDouble(br.readLine());
-            ans = surfaceAreaSphere(radius);
+            ans = 4 * Math.PI * radius * radius;
             break;
 
             case 3: System.out.println("Enter radius: ");
             double  r = Double.parseDouble(br.readLine());
             System.out.println("Enter height: ");
             double  height = Double.parseDouble(br.readLine());
-            ans = surfaceAreaCone(r, height);
+            ans =  Math.PI * r * (r + Math.pow((height * height + r * r), 0.5));
             break;
 
             case 4: System.out.println("Enter radius: ");
             double  ra = Double.parseDouble(br.readLine()); 
-            ans = surfaceAreaHemisphere(ra);
+            ans = 3 * Math.PI * ra * ra;
             break;
 
             case 5: System.out.println("Enter radius: ");
             double  rad = Double.parseDouble(br.readLine());
             System.out.println("Enter height: ");
             double  h = Double.parseDouble(br.readLine()); 
-            ans = surfaceAreaCylinder(rad, h);
+            ans = 2 * (Math.PI * rad * rad + Math.PI * rad * h);
             break; 
         }
   
@@ -56,58 +56,4 @@ public class Area {
         
     }
 
-    /**
-     * Calculate the surface area of a cube.
-     *
-     * @param sideLength side length of cube
-     * @return surface area of given cube
-     */
-    private static double surfaceAreaCube(double sideLength) {
-        return 6 * sideLength * sideLength;
-    }
-
-    /**
-     * Calculate the surface area of a sphere.
-     *
-     * @param radius radius of sphere
-     * @return surface area of given sphere
-     */
-    private static double surfaceAreaSphere(double radius) {
-        return 4 * Math.PI * radius * radius;
-    }
-
-    
-    /**
-     * Calculate surface area of a cylinder
-     *
-     * @param radius radius of the floor
-     * @param height height of the cylinder.
-     * @return volume of given cylinder
-     */
-    private static double surfaceAreaCylinder(double radius, double height) {
-        return 2 * (Math.PI * radius * radius + Math.PI * radius * height);
-    }
-
-
-
-    /**
-     * Calculate the surface area of a hemisphere.
-     *
-     * @param radius radius of hemisphere
-     * @return surface area of given hemisphere
-     */
-    private static double surfaceAreaHemisphere(double radius) {
-        return 3 * Math.PI * radius * radius;
-    }
-
-    /**
-     * Calculate the surface area of a cone.
-     *
-     * @param radius radius of cone.
-     * @param height of cone.
-     * @return surface area of given cone.
-     */
-    private static double surfaceAreaCone(double radius, double height) {
-        return Math.PI * radius * (radius + Math.pow((height * height + radius * radius), 0.5));
-    }
 }
