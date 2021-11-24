@@ -10,3 +10,7 @@
   - BinaryToDecimal
   - AnyToAny
   - HexToOct
+
+3. Search
+  - BinarySearch
+  - LinearSearch
