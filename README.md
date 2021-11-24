@@ -5,3 +5,8 @@
   - Area
   - PythagoreanTriple
   - MagicSquare
+
+2. Conversion
+  - BinaryToDecimal
+  - AnyToAny
+  - HexToOct
