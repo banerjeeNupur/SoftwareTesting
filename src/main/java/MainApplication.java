@@ -1,8 +1,11 @@
+import com.stp.Calender.LeapYear;
 import com.stp.Conversion.AnyToAny;
 
 public class MainApplication {
     public static void main(String[] args) {
-        AnyToAny a = new AnyToAny();
-        a.anytotany();
+
+        LeapYear l = new LeapYear();
+        l.leapyear();
+
     }
 }
