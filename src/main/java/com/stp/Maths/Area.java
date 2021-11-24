@@ -1,4 +1,4 @@
-package Maths;
+package com.stp.Maths;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 public class Area {
 
-    public static void main(String[] args) throws IOException {
+    public void area() throws IOException {
 
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

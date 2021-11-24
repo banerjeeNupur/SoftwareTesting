@@ -1,16 +1,14 @@
-package Search;
+package com.stp.Search;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// Iterative Binary Search
-// Returns index of x if it is present in arr[]
-
-class BinarySearch {
-	
-	public static void main(String args[]) throws IOException
-	{
-
+class LinearSearch
+{
+ 
+    public void linearsearch() throws IOException
+    {
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
         System.out.println("Enter numbers:");
@@ -20,26 +18,21 @@ class BinarySearch {
 
         System.out.println("Enter target: ");
         int x = Integer.parseInt(br.readLine());
-		
-        int l = 0, r = arr.length - 1, res=-1;
-		while (l <= r) {
-			int m = l + (r - l) / 2;
 
-			if (arr[m] == x){
-                res =  m;
+        int res = -1;
+        for (int i = 0; i < arr.length; i++)
+        {
+            if (arr[i] == x){
+                res = i;
                 break;
             }
-				
-			if (arr[m] < x)
-				l = m + 1;
+                
+        }
 
-			else
-				r = m - 1;
-		}
-
-		if (res == -1)
-			System.out.println("Element not present");
-		else
-			System.out.println("Element found at index: " + res);
-	}
+        
+        if (res == -1)
+            System.out.print("Element is not present in array");
+        else
+            System.out.print("Element is present at index: "+ res);
+    }
 }

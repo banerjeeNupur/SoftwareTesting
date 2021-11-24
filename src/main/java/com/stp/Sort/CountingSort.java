@@ -1,4 +1,4 @@
-package Sort;
+package com.stp.Sort;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 // Implementation of Counting Sort
 class CountingSort {
 	
-	public static void main(String args[]) throws IOException
+	public void countingsort() throws IOException
 	{
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

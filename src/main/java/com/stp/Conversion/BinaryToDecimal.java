@@ -1,11 +1,11 @@
-package Conversion;
+package com.stp.Conversion;
 import java.util.Scanner;
 
 // This class converts a Binary number to a Decimal number
 
 class BinaryToDecimal {
 
-    public static void main(String args[]) {
+    public void binarytodecimal() {
         Scanner sc = new Scanner(System.in);
         int binNum, binCopy, d, s = 0, power = 0;
         System.out.print("Binary number: ");

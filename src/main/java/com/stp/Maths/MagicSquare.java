@@ -1,4 +1,4 @@
-package Maths;
+package com.stp.Maths;
 import java.util.*;
 
 // A magic square of order n is an arrangement of distinct n^2 integers,in a square, such that the n numbers in all
@@ -6,7 +6,7 @@ import java.util.*;
 
 public class MagicSquare {
 
-    public static void main(String[] args) {
+    public void magicsquare() {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Input a number: ");

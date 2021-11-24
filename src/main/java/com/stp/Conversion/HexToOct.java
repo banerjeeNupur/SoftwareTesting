@@ -1,11 +1,11 @@
-package Conversion;
+package com.stp.Conversion;
 import java.util.Scanner;
 
 // Converts any Hexadecimal Number to Octal
 
 public class HexToOct {
 
-    public static void main(String args[]) {
+    public void hextooct() {
         String hexadecnum;
         int decnum, octalnum;
         Scanner scan = new Scanner(System.in);

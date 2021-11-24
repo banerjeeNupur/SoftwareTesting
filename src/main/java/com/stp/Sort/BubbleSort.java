@@ -1,4 +1,4 @@
-package Sort;
+package com.stp.Sort;
 import java.io.*;
  
 // Implementation of Bubble Sort
@@ -6,7 +6,7 @@ import java.io.*;
 class BubbleSort
 {
 
-    public static void main(String args[]) throws IOException
+    public void bubblesort() throws IOException
     {
 
         System.out.println("Enter numbers : ");

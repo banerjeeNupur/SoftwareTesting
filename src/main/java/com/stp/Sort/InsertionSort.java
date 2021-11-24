@@ -1,10 +1,10 @@
-package Sort;
+package com.stp.Sort;
 import java.io.*;
 
 // Implementation of Insertion Sort
 class InsertionSort {
 	
-	public static void main(String args[]) throws IOException
+	public void insertionsort() throws IOException
 	{
         System.out.println("Enter numbers : ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

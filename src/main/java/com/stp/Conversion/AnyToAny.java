@@ -1,4 +1,4 @@
-package Conversion;
+package com.stp.Conversion;
 import java.util.Scanner;
 
 // given a source number , source base, destination base, this code can give you the destination
@@ -7,7 +7,11 @@ import java.util.Scanner;
 
 public class AnyToAny {
 
-    public static void main(String[] args) {
+    public AnyToAny() {
+
+    }
+
+    public void anytotany() {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter number: ");
         int sn = scn.nextInt();
