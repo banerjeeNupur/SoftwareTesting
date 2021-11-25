@@ -15,7 +15,8 @@ public class Area {
             case 1:
                 if(a<0){
                     System.out.println("sides cannot be negative");
-                    return -1;
+                    ans = -1;
+                    break;
                 }
                 ans =  6 * a * a;
                 break;
@@ -23,7 +24,8 @@ public class Area {
             case 2:
                 if(a<0) {
                     System.out.println("sides cannot be negative");
-                    return -1;
+                    ans = -1;
+                    break;
                 }
                 ans =  4 * Math.PI * a * a;
                 break;
@@ -31,7 +33,8 @@ public class Area {
             case 3:
                 if(a<0 || b<0) {
                     System.out.println("sides cannot be negative");
-                    return -1;
+                    ans = -1;
+                    break;
                 }
                 ans =   Math.PI * a * (a + Math.pow((b * b + a * a), 0.5));
                 break;
@@ -39,7 +42,8 @@ public class Area {
             case 4:
                 if(a<0 || b<0) {
                     System.out.println("sides cannot be negative");
-                    return -1;
+                    ans = -1;
+                    break;
                 }
                 ans =  3 * Math.PI * a * a;
                 break;
@@ -47,7 +51,8 @@ public class Area {
             case 5:
                 if(a<0 || b<0) {
                     System.out.println("sides cannot be negative");
-                    return -1;
+                    ans = -1;
+                    break;
                 }
                 ans = 2 * (Math.PI * a * a + Math.PI * a * b);
                 break;
