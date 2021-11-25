@@ -18,7 +18,7 @@ class NthUglyNumberTest {
 
     @Test
     void nthUglyNumberTest(){
-        assertEquals(8,n.nthUglyNumber(7));
+        assertEquals(8,n.nthUglyNumber(7),"Nth Ugly Number Test Successful");
         assertNotEquals(7,n.nthUglyNumber(7));
         assertEquals(9,n.nthUglyNumber(8));
         assertNotEquals(10,n.nthUglyNumber(8));
