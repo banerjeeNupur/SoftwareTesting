@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GCDTest {
+public class GCDTest {
     GCD g = new GCD();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void gcdTest(){
+    public void gcdTest(){
         assertEquals(2,g.gcd(2,4),"GCD Test successful");
         assertEquals(2,g.gcd(9,3),"GCD Test successful");
         assertNotEquals(2,g.gcd(3,9));

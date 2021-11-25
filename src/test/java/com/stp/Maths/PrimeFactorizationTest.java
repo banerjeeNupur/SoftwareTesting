@@ -10,18 +10,18 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PrimeFactorizationTest {
+public class PrimeFactorizationTest {
     PrimeFactorization p = new PrimeFactorization();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void primeFactorization(){
+    public void primeFactorization(){
         ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(2,3,5));
         List<Integer> list2 = p.primeFactorization(30);
 

@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PythagoreanTripleTest {
+public class PythagoreanTripleTest {
     PythagoreanTriple p = new PythagoreanTriple();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void pythagoreanTripleTest(){
+    public void pythagoreanTripleTest(){
         assertEquals(true,p.pythagoreantriple(3,4,5),"PythagoreanTriple Test successful");
         assertEquals(false,p.pythagoreantriple(3,6,8));
         assertNotEquals(true,p.pythagoreantriple(6,7,8));

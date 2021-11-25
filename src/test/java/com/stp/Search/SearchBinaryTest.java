@@ -1,23 +1,25 @@
 package com.stp.Search;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SearchBinaryTest {
+public class SearchBinaryTest {
     SearchBinary b = new SearchBinary();
-    @BeforeEach
-    void setUp(){
+    @Before
+    public void setUp(){
     }
 
-    @AfterEach
-    void tearDown(){
+    @After
+    public void tearDown(){
     }
 
     @Test
-    void binarySearchTest(){
+    public void binarySearchTest(){
         int arr[] = new int[] {4,7,9,15,17};
 
         assertEquals(4,b.binarysearch(arr,17),"Binary Search Test successful");

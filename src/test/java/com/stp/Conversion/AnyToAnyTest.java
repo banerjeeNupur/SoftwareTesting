@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AnyToAnyTest {
+public class AnyToAnyTest {
     AnyToAny a = new AnyToAny();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void anyToAnyTest(){
+    public void anyToAnyTest(){
         assertEquals(5,a.anyToAny(101,2,10),"any to any test successful");
         assertNotEquals(6,a.anyToAny(101,2,10));
     }

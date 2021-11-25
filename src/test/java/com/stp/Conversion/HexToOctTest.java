@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HexToOctTest {
+public class HexToOctTest {
     HexToOct h = new HexToOct();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void hexToOctTest(){
+    public void hexToOctTest(){
         assertEquals(17777,h.hextooct("FFFF"));
         assertNotEquals(1234,h.hextooct("FFAE"));
     }

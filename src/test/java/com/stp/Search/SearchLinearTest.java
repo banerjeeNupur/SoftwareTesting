@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SearchLinearTest {
+public class SearchLinearTest {
     SearchLinear l = new SearchLinear();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void binarySearchTest(){
+    public void binarySearchTest(){
         int arr[] = new int[] {5,9,2,-1,100};
 
         assertEquals(0,l.linearsearch(arr,5),"Linear Search Test successful");

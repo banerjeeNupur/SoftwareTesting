@@ -6,17 +6,17 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BinaryToDecimalTest {
+public class BinaryToDecimalTest {
     BinaryToDecimal b = new BinaryToDecimal();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
     @Test
-    void binartToDecimalTest(){
+    public void binartToDecimalTest(){
         assertEquals(4,b.binarytodecimal(100),"Binary to Decimal Conversion Successful");
         assertNotEquals(4,b.binarytodecimal(10));
         assertEquals(0,b.binarytodecimal(0));

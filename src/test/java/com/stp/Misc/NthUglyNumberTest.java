@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NthUglyNumberTest {
+public class NthUglyNumberTest {
     NthUglyNumber n = new NthUglyNumber();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void nthUglyNumberTest(){
+    public void nthUglyNumberTest(){
         assertEquals(8,n.nthUglyNumber(7),"Nth Ugly Number Test Successful");
         assertNotEquals(7,n.nthUglyNumber(7));
         assertEquals(9,n.nthUglyNumber(8));

@@ -7,18 +7,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LeapYearTest {
+public class LeapYearTest {
     LeapYear l = new LeapYear();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void leapYearTest(){
+    public void leapYearTest(){
         assertEquals(true,l.leapyear(2000),"Leap Year Test Successful");
         assertEquals(false, l.leapyear(1998));
         assertTrue(l.leapyear(2008));

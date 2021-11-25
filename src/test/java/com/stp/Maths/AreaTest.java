@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AreaTest {
+public class AreaTest {
     Area a = new Area();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void areaTest(){
+    public void areaTest(){
         assertEquals(54.0,a.area(1,3.0,0),"Cube surface area Test successful");
         assertNotEquals(55.0, a.area(1,3.0,0));
 

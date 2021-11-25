@@ -8,19 +8,19 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MagicSquareTest {
+public class MagicSquareTest {
 
     MagicSquare m = new MagicSquare();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void magicSquareTest(){
+    public void magicSquareTest(){
         int [][] arr1 = {{2,7,6},{9,5,1},{4,3,8}};
         assertTrue(Arrays.deepEquals(arr1, m.magicsquare(3)));
         assertFalse(Arrays.deepEquals(arr1,m.magicsquare(2)));
