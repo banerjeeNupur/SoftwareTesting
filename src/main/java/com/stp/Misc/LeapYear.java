@@ -1,6 +1,4 @@
-package com.stp.Calender;
-
-import java.util.Scanner;
+package com.stp.Misc;
 
 public class LeapYear {
 
