@@ -9,7 +9,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MagicSquareTest {
-//276 951 438
+
     MagicSquare m = new MagicSquare();
     @BeforeEach
     void setUp(){
