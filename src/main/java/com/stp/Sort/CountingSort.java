@@ -1,9 +1,7 @@
 package com.stp.Sort;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 // Implementation of Counting Sort
+
 public class CountingSort {
 	
 	public int[] countingsort(int [] arr)

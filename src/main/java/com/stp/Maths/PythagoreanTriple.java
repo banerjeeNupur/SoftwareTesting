@@ -1,11 +1,6 @@
 package com.stp.Maths;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 
 // This class checks if 3 numbers form a Pythagorean triple or not
-
 
 public class PythagoreanTriple {
 

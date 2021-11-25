@@ -1,5 +1,4 @@
 package com.stp.Conversion;
-import java.util.Scanner;
 
 // Converts any Hexadecimal Number to Octal
 
@@ -21,7 +20,6 @@ public class HexToOct {
             val = 16 * val + n;
         }
         decnum =  val;
-        
 
         // convert decimal to octal
         int now;

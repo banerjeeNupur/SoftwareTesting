@@ -1,7 +1,7 @@
 package com.stp.Sort;
-import java.io.*;
 
 // Implementation of Insertion Sort
+
 public class InsertionSort {
 	
 	public int[] insertionsort(int [] arr)

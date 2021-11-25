@@ -1,7 +1,4 @@
 package com.stp.Maths;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 // This class calculates the Area of different shapes
 

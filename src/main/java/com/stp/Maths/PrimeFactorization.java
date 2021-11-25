@@ -1,8 +1,6 @@
 package com.stp.Maths;
 
-
 import java.util.*;
-
 
 public class PrimeFactorization {
 

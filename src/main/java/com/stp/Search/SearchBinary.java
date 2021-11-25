@@ -1,7 +1,4 @@
 package com.stp.Search;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 // Iterative Binary Search
 // Returns index of x if it is present in arr[]
