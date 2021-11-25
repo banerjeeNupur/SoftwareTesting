@@ -2,6 +2,9 @@ import com.stp.Conversion.*;
 import com.stp.Maths.*;
 import com.stp.Misc.*;
 import com.stp.Search.*;
+import com.stp.Sort.BubbleSort;
+import com.stp.Sort.CountingSort;
+import com.stp.Sort.InsertionSort;
 
 
 import java.util.*;
@@ -135,15 +138,25 @@ public class MainApplication {
             }
             break;
 
-            case 4: System.out.println("Sort");
-                System.out.println("Enter choice: ");
+            case 4:
+                System.out.println("Enter choice:\n1. Bubble Sort\n2. Counting Sort\n3. Insertion Sort ");
                 ch = sc.nextInt();
+                System.out.println("Enter array length: ");
+                int len = sc.nextInt();
+                int sort_arr[] = new int[len];
+                System.out.println("Enter numbers: ");
+                for(int u=0;u<len;u++){
+                    sort_arr[u] = sc.nextInt();
+                }
                 switch (ch){
                     case 1: // Bubble Sort
+                        new BubbleSort().bubblesort(sort_arr);
                         break;
                     case 2: // Counting Sort
+                        new CountingSort().countingsort(sort_arr);
                         break;
                     case 3: // Insertion Sort
+                        new InsertionSort().insertionsort(sort_arr);
                         break;
                 }
             break;
