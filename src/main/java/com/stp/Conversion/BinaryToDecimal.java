@@ -3,13 +3,13 @@ import java.util.Scanner;
 
 // This class converts a Binary number to a Decimal number
 
-class BinaryToDecimal {
+public class BinaryToDecimal {
 
-    public void binarytodecimal() {
-        Scanner sc = new Scanner(System.in);
-        int binNum, binCopy, d, s = 0, power = 0;
+    public int binarytodecimal(int binNum) {
+        //Scanner sc = new Scanner(System.in);
+        int binCopy, d, s = 0, power = 0;
         System.out.print("Binary number: ");
-        binNum = sc.nextInt();
+        //binNum = sc.nextInt();
         binCopy = binNum;
         while (binCopy != 0) {
             d = binCopy % 10;
@@ -17,6 +17,7 @@ class BinaryToDecimal {
             binCopy /= 10;
         }
         System.out.println("Decimal equivalent:" + s);
-        sc.close();
+        //sc.close();
+        return s;
     }
 }
