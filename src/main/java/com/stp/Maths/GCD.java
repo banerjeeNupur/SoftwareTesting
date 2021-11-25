@@ -7,16 +7,9 @@ import java.io.InputStreamReader;
 
 
 public class GCD {
-//throws IOException
+
 
     public int gcd(int num1,int num2)  {
-
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        System.out.println("Enter number 1: ");
-//        int num1 = Integer.parseInt(br.readLine());
-//
-//        System.out.println("Enter number 2: ");
-//        int num2 = Integer.parseInt(br.readLine());
 
         int ans=0;
         if (num1 < 0 || num2 < 0) {

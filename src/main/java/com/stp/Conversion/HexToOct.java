@@ -6,12 +6,10 @@ import java.util.Scanner;
 public class HexToOct {
 
     public int hextooct(String hexadecnum) {
-       // String hexadecnum;
+
         int decnum, octalnum;
-        //Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter Hexadecimal Number : ");
-        //hexadecnum = scan.nextLine();
 
         // first convert hexadecimal to decimal
         String str = "0123456789ABCDEF";
@@ -37,8 +35,7 @@ public class HexToOct {
         }
         octnum /= 10;
         octalnum =  octnum;
-        System.out.println("Number in octal: " + octalnum);
-        //scan.close();
+
         return octalnum;
     }
 }

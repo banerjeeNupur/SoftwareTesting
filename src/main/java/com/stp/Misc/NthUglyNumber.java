@@ -1,13 +1,9 @@
 package com.stp.Misc;
 
-import java.util.Scanner;
-
 public class NthUglyNumber {
 
-    public void nthUglyNumber(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the value of n : ");
-        int n = sc.nextInt();
+    public long nthUglyNumber(int n){
+
 
         long[] ugly = new long[n];
         int two = 0, three = 0, five = 0;
@@ -34,6 +30,6 @@ public class NthUglyNumber {
             }
         }
 
-        System.out.println("nth Ugly number is : " + next);
+        return next;
     }
 }

@@ -6,11 +6,8 @@ import java.util.*;
 
 public class MagicSquare {
 
-    public void magicsquare() {
+    public int[][] magicsquare(int num) {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Input a number: ");
-        int num = sc.nextInt();
         if ((num % 2 == 0) || (num <= 0)) {
             System.out.print("Input number must be odd and >0");
             System.exit(0);
@@ -35,16 +32,12 @@ public class MagicSquare {
         // print the square
         for (int i = 0; i < num; i++) {
             for (int j = 0; j < num; j++) {
-                if (magic_square[i][j] < 10) {
-                    System.out.print(" ");
-                }
-                if (magic_square[i][j] < 100) {
-                    System.out.print(" ");
-                }
                 System.out.print(magic_square[i][j] + " ");
             }
             System.out.println();
         }
+
+        return magic_square;
 
     }
 }

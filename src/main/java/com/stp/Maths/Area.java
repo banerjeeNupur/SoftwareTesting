@@ -5,52 +5,30 @@ import java.io.InputStreamReader;
 
 // This class calculates the Area of different shapes
 
-
 public class Area {
 
-    public void area() throws IOException {
+    public double area(int input, double a, double b)  {
 
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter choice : \n1. SurfaceAreaCube\n2. SurfaceAreaSphere\n3. SurfaceAreaCone"+
-        "\n4. SurfaceAreaHemisphere\n5. SurfaceAreaCylinder");
-
-
-        int input = Integer.parseInt(br.readLine());
         double ans=0;
 
         switch(input){
-            case 1: System.out.println("Enter sidelength: ");
-            double  sideLength = Double.parseDouble(br.readLine());
-            ans = 6 * sideLength * sideLength;
+            case 1: ans =  6 * a * a;
             break;
 
-            case 2: System.out.println("Enter radius: ");
-            double  radius = Double.parseDouble(br.readLine());
-            ans = 4 * Math.PI * radius * radius;
+            case 2: ans =  4 * Math.PI * a * a;
             break;
 
-            case 3: System.out.println("Enter radius: ");
-            double  r = Double.parseDouble(br.readLine());
-            System.out.println("Enter height: ");
-            double  height = Double.parseDouble(br.readLine());
-            ans =  Math.PI * r * (r + Math.pow((height * height + r * r), 0.5));
+            case 3: ans =   Math.PI * a * (a + Math.pow((b * b + a * a), 0.5));
             break;
 
-            case 4: System.out.println("Enter radius: ");
-            double  ra = Double.parseDouble(br.readLine()); 
-            ans = 3 * Math.PI * ra * ra;
+            case 4: ans =  3 * Math.PI * a * a;
             break;
 
-            case 5: System.out.println("Enter radius: ");
-            double  rad = Double.parseDouble(br.readLine());
-            System.out.println("Enter height: ");
-            double  h = Double.parseDouble(br.readLine()); 
-            ans = 2 * (Math.PI * rad * rad + Math.PI * rad * h);
+            case 5: ans = 2 * (Math.PI * a * a + Math.PI * a * b);
             break; 
         }
   
-        System.out.println("Result is : "+ans+" units");
+        return ans;
         
     }
 

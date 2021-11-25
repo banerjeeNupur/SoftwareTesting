@@ -4,10 +4,6 @@ public class LeapYear {
 
     public boolean leapyear(int year){
 
-        //Scanner sc = new Scanner(System.in);
-        //System.out.println("Enter year: ");
-       // int year = sc.nextInt();
-
         boolean is_leap_year = false;
 
         if (year % 4 == 0) {

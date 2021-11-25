@@ -6,19 +6,8 @@ import java.io.InputStreamReader;
 class LinearSearch
 {
  
-    public void linearsearch() throws IOException
+    public int linearsearch(int arr[], int x)
     {
-        
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
-        System.out.println("Enter numbers:");
-        String in[] = br.readLine().split("\\s+");
-        int arr[] = new int[in.length];
-        for(int i=0;i<in.length;i++) 
-         arr[i] = Integer.parseInt(in[i]);
-
-        System.out.println("Enter target: ");
-        int x = Integer.parseInt(br.readLine());
 
         int res = -1;
         for (int i = 0; i < arr.length; i++)
@@ -30,10 +19,6 @@ class LinearSearch
                 
         }
 
-        
-        if (res == -1)
-            System.out.print("Element is not present in array");
-        else
-            System.out.print("Element is present at index: "+ res);
+        return res;
     }
 }

@@ -8,30 +8,20 @@ import java.io.InputStreamReader;
 
 
 public class PythagoreanTriple {
-//throws IOException
+
     public boolean pythagoreantriple(int a,int b,int c) {
 
         boolean res = true;
 
-       // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        //System.out.println("Enter 3 integers : ");
-        //String input[] = br.readLine().split("\\s+");
-
-        //int a = Integer.parseInt(input[0]);
-        //int b = Integer.parseInt(input[1]);
-        //int c = Integer.parseInt(input[2]);
+        int max = Math.max(a, Math.max(b, c));
+        int min = Math.min(a, Math.min(b, c));
+        int mid = a + b + c - max - min;
         
-        if (a <= 0 || b <= 0 || c <= 0) {
+        if (min <= 0 || mid <= 0 || max <= 0) {
             res =  false;
         } else {
-            res =  (a * a) + (b * b) == (c * c);
+            res =  (min * min) + (mid * mid) == (max * max);
         }
-
-        if(res) 
-            System.out.println("Given numbers form PythagoreanTriple");
-        else 
-            System.out.println("Given numbers don't form PythagoreanTriple");
 
         return res;
         

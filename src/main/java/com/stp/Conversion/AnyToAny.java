@@ -7,20 +7,8 @@ import java.util.Scanner;
 
 public class AnyToAny {
 
-    public AnyToAny() {
+    public int anyToAny(int sn, int sb, int db) {
 
-    }
-
-    public void anytotany() {
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Enter number: ");
-        int sn = scn.nextInt();
-
-        System.out.println("Enter source base: ");
-        int sb = scn.nextInt();
-
-        System.out.println("Enter destination base: ");
-        int db = scn.nextInt();
         int m = 1, dec = 0, dn = 0;
         while (sn != 0) {
             dec = dec + (sn % 10) * m;
@@ -34,6 +22,6 @@ public class AnyToAny {
             dec /= db;
         }
         System.out.println(dn);
-        scn.close();
+        return dn;
     }
 }
