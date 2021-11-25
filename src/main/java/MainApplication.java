@@ -121,23 +121,24 @@ public class MainApplication {
 
                 case 3: System.out.println("Enter choice:\n1. Binary Search\n2. Linear Search\n3. Menu ");
                     ch = sc.nextInt();
-
+                    System.out.println("Enter array length: ");
+                    int search_len = sc.nextInt();
+                    int search_arr[] = new int[search_len];
                     System.out.println("Enter numbers: ");
-                    String bs[] = sc.next().split("\\s+");
-                    int arr[] = new int[bs.length];
-                    for(int k=0;k<bs.length;k++){
-                        arr[k] = Integer.parseInt(bs[k]);
+                    for(int u=0;u<search_len;u++){
+                        search_arr[u] = sc.nextInt();
                     }
+
                     System.out.println("Enter target: ");
                     int target = sc.nextInt();
 
                     switch (ch){
                         case 1: // Binary
-                            new SearchBinary().binarysearch(arr,target);
+                            new SearchBinary().binarysearch(search_arr,target);
                             break;
 
                         case 2: // Linear
-                            new SearchLinear().linearsearch(arr,target);
+                            new SearchLinear().linearsearch(search_arr,target);
                             break;
                         case 3:
                             continue start_main;

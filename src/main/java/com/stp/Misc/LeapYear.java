@@ -13,7 +13,8 @@ public class LeapYear {
                 else
                     is_leap_year = false;
             }
-            is_leap_year = true;
+            else
+                is_leap_year = true;
         }
 
         else
