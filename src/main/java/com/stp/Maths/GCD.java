@@ -3,20 +3,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// This class converts the GCD of 2 numbers
+// This class calculates the GCD of 2 numbers
 
 
 public class GCD {
+//throws IOException
 
+    public int gcd(int num1,int num2)  {
 
-    public void gcd() throws IOException {
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter number 1: ");
-        int num1 = Integer.parseInt(br.readLine());
-
-        System.out.println("Enter number 2: ");
-        int num2 = Integer.parseInt(br.readLine());
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        System.out.println("Enter number 1: ");
+//        int num1 = Integer.parseInt(br.readLine());
+//
+//        System.out.println("Enter number 2: ");
+//        int num2 = Integer.parseInt(br.readLine());
 
         int ans=0;
         if (num1 < 0 || num2 < 0) {
@@ -40,5 +40,6 @@ public class GCD {
         }
         
         System.out.println("GCD is  : "+ans);
+        return ans;
     }
 }
