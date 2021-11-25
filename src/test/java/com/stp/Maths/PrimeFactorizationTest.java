@@ -22,7 +22,7 @@ public class PrimeFactorizationTest {
 
     @Test
     public void primeFactorization(){
-        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(2,3,5));
+        List<Integer> list1 = new ArrayList<>(Arrays.asList(2,3,5));
         List<Integer> list2 = p.primeFactorization(30);
 
         assertArrayEquals(list1.toArray(), list2.toArray(),"prime factorization test successful");
@@ -30,7 +30,7 @@ public class PrimeFactorizationTest {
 
         list2 = p.primeFactorization(15);
         assertNotEquals(list1.toArray(),list2.toArray());
-
-        assertNull(p.primeFactorization(1));
+        List<Integer> list3 = new ArrayList<>();
+        assertArrayEquals(list3.toArray(),p.primeFactorization(1).toArray());
     }
 }

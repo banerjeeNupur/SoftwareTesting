@@ -18,7 +18,7 @@ public class HexToOctTest {
 
     @Test
     public void hexToOctTest(){
-        assertEquals(17777,h.hextooct("FFFF"));
+        assertEquals(177777,h.hextooct("FFFF"));
         assertNotEquals(1234,h.hextooct("FFAE"));
     }
 }

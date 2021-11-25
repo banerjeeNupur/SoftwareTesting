@@ -22,7 +22,7 @@ public class NthUglyNumberTest {
         assertNotEquals(7,n.nthUglyNumber(7));
         assertEquals(9,n.nthUglyNumber(8));
         assertNotEquals(10,n.nthUglyNumber(8));
-        assertEquals(15,n.nthUglyNumber(14));
-        assertNotEquals(19,n.nthUglyNumber(14));
+        assertEquals(20,n.nthUglyNumber(14));
+        assertNotEquals(15,n.nthUglyNumber(14));
     }
 }

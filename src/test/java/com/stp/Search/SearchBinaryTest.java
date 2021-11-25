@@ -24,7 +24,7 @@ public class SearchBinaryTest {
 
         assertEquals(4,b.binarysearch(arr,17),"Binary Search Test successful");
         assertEquals(2,b.binarysearch(arr,9));
-        assertEquals(0,b.binarysearch(arr,0));
+        assertEquals(0,b.binarysearch(arr,4));
         assertEquals(-1,b.binarysearch(arr,8));
     }
 }
