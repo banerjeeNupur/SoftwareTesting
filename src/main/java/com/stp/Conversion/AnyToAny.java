@@ -21,7 +21,7 @@ public class AnyToAny {
             m *= 10;
             dec /= db;
         }
-        System.out.println(dn);
+        System.out.println("Result: "+dn);
         return dn;
     }
 }

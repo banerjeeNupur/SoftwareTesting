@@ -22,6 +22,7 @@ public class SearchBinary {
 			else
 				r = m - 1;
 		}
+		System.out.println("Result: ");
 		return res;
 	}
 }

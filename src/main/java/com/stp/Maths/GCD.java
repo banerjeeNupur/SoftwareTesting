@@ -32,7 +32,7 @@ public class GCD {
             ans = num2;
         }
         
-        System.out.println("GCD is  : "+ans);
+        System.out.println("Result  : "+ans);
         return ans;
     }
 }

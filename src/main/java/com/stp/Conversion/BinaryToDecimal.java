@@ -15,6 +15,7 @@ public class BinaryToDecimal {
             binCopy /= 10;
         }
 
+        System.out.println("Result : "+s);
         return s;
     }
 }

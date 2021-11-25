@@ -29,7 +29,7 @@ public class NthUglyNumber {
                 nm5 = ugly[five] * 5;
             }
         }
-
+        System.out.println("Result: "+next);
         return next;
     }
 }

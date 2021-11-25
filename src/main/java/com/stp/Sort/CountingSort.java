@@ -42,7 +42,7 @@ public class CountingSort {
 			arr[i] = output[i];
 
 		
-		System.out.print("Sorted character array is ");
+		System.out.print("Result: ");
 		for (int i = 0; i < arr.length; ++i)
 			System.out.print(arr[i]+" ");
 

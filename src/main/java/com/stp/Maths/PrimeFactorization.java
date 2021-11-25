@@ -36,6 +36,7 @@ public class PrimeFactorization {
             res.add(n);
         }
 
+        System.out.println("Result: ");
         for (int v : res) {
             System.out.print(v+" ");
         }

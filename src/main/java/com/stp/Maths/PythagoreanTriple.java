@@ -23,6 +23,7 @@ public class PythagoreanTriple {
             res =  (min * min) + (mid * mid) == (max * max);
         }
 
+        System.out.println("Result: "+res);
         return res;
         
     }

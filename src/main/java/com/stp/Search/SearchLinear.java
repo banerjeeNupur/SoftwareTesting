@@ -19,6 +19,7 @@ public class SearchLinear
                 
         }
 
+        System.out.println("Result: "+res);
         return res;
     }
 }

@@ -19,10 +19,9 @@ public class LeapYear {
         else
             is_leap_year = false;
 
+        System.out.println("Result: ");
         if (!is_leap_year)
             System.out.println(year + " : Non Leap-year");
-
-
         else
             System.out.println(year + " : Leap-year");
 

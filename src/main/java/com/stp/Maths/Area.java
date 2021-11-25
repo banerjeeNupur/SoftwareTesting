@@ -61,7 +61,8 @@ public class Area {
                 System.out.println("invalid input");
                 ans = -1;
         }
-  
+
+        System.out.println("Result: "+ans);
         return ans;
         
     }

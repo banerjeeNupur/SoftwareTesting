@@ -29,7 +29,7 @@ public class BubbleSort
             if (swapped == false)
                 break;
         }
-        System.out.println("Sorted array: ");
+        System.out.println("Result: ");
 
         for (i = 0; i < n; i++)
             System.out.print(arr[i] + " ");

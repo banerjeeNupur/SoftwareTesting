@@ -36,6 +36,7 @@ public class HexToOct {
         octnum /= 10;
         octalnum =  octnum;
 
+        System.out.println("Result: "+octalnum);
         return octalnum;
     }
 }
