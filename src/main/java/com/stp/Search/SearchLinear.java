@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class LinearSearch
+public class SearchLinear
 {
  
     public int linearsearch(int arr[], int x)
