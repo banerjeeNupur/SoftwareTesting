@@ -8,15 +8,14 @@ public class CountingSort {
 	{
 
         int n = arr.length;
-
+		if(n==0)
+			return null;
         // The output character array that will have sorted arr
 		int output[] = new int[n];
 
 		// Create a count array to store count of individual
 		// characters and initialize count array as 0
 		int count[] = new int[256];
-		for (int i = 0; i < 256; ++i)
-			count[i] = 0;
 
 		// store count of each character
 		for (int i = 0; i < n; ++i)

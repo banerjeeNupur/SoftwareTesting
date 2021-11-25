@@ -6,8 +6,9 @@ public class InsertionSort {
 	
 	public int[] insertionsort(int [] arr)
 	{
-
         int n = arr.length;
+		if(n==0)
+			return null;
 		for (int i = 1; i < n; ++i) {
 			int key = arr[i];
 			int j = i - 1;

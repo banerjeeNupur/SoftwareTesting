@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CountingSortTest {
+public class CountingSortTest {
     CountingSort c = new CountingSort();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void bubbleSortTest(){
+    public void countingSortTest(){
         int arr1[] = new int[] {7,2,1,2,1,5};
         int arr2[] = new int[] {1,1,2,2,5,7};
         assertArrayEquals(arr2,c.countingsort(arr1));

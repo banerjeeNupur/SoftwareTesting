@@ -9,6 +9,8 @@ public class BubbleSort
     {
 
         int n = arr.length;
+        if(n==0)
+            return null;
         int i, j, temp;
         boolean swapped;
         for (i = 0; i < n - 1; i++)

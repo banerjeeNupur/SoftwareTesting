@@ -6,18 +6,18 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class InsertionSortTest {
+public class InsertionSortTest {
     InsertionSort i = new InsertionSort();
     @BeforeEach
-    void setUp(){
+    public void setUp(){
     }
 
     @AfterEach
-    void tearDown(){
+    public void tearDown(){
     }
 
     @Test
-    void insertionSortTest(){
+    public void insertionSortTest(){
         int arr1[] = new int[] {5,9,3,1,2};
         int arr2[] = new int[] {1,2,3,5,9};
         assertArrayEquals(arr2,i.insertionsort(arr1));
