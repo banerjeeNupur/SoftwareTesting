@@ -19,7 +19,7 @@ public class SearchBinary {
 			else
 				r = m - 1;
 		}
-		System.out.println("Result: ");
+		System.out.println("Result: "+res);
 		return res;
 	}
 }
