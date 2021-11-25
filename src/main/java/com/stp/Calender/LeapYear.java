@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class LeapYear {
 
-    public void leapyear(){
+    public boolean leapyear(int year){
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter year: ");
-        int year = sc.nextInt();
+        //Scanner sc = new Scanner(System.in);
+        //System.out.println("Enter year: ");
+       // int year = sc.nextInt();
 
         boolean is_leap_year = false;
 
@@ -31,5 +31,7 @@ public class LeapYear {
 
         else
             System.out.println(year + " : Leap-year");
+
+        return is_leap_year;
     }
 }
