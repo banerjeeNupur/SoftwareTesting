@@ -5,6 +5,7 @@
   - Area
   - PythagoreanTriple
   - MagicSquare
+  - PrimeFactorization
 
 2. Conversion
   - BinaryToDecimal
@@ -20,5 +21,6 @@
   - BubbleSort
   - CountingSort
 
-5. Calender
+5. Misc
   - LeapYear
+  - NthUglyNumber
