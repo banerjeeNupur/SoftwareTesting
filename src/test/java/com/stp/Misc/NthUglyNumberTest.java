@@ -23,6 +23,6 @@ class NthUglyNumberTest {
         assertEquals(9,n.nthUglyNumber(8));
         assertNotEquals(10,n.nthUglyNumber(8));
         assertEquals(15,n.nthUglyNumber(14));
-        assertNotEquals(16,n.nthUglyNumber(14));
+        assertNotEquals(19,n.nthUglyNumber(14));
     }
 }
