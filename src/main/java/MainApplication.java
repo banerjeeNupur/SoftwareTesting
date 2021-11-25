@@ -6,7 +6,7 @@ import com.stp.Maths.PythagoreanTriple;
 import java.io.IOException;
 
 public class MainApplication {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
        // LeapYear l = new LeapYear();
         //l.leapyear();

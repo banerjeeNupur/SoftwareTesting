@@ -8,8 +8,8 @@ import java.io.InputStreamReader;
 
 
 public class PythagoreanTriple {
-
-    public boolean pythagoreantriple(int a,int b,int c) throws IOException{
+//throws IOException
+    public boolean pythagoreantriple(int a,int b,int c) {
 
         boolean res = true;
 
