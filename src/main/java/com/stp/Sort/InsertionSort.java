@@ -2,19 +2,10 @@ package com.stp.Sort;
 import java.io.*;
 
 // Implementation of Insertion Sort
-class InsertionSort {
+public class InsertionSort {
 	
-	public void insertionsort() throws IOException
+	public int[] insertionsort(int [] arr)
 	{
-        System.out.println("Enter numbers : ");
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String s [] = br.readLine().split("\\s+");
-        int arr[] = new int[s.length];
-
-        for (int i = 0; i < s.length; i++) {
-            arr[i] = Integer.parseInt(s[i]);
-        }
-		
 
         int n = arr.length;
 		for (int i = 1; i < n; ++i) {
@@ -31,5 +22,6 @@ class InsertionSort {
         for (int i = 0; i < n; ++i)
 			System.out.print(arr[i] + " ");
 
+        return arr;
 	}
 }

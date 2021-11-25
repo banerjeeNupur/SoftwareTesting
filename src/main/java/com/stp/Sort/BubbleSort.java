@@ -3,20 +3,11 @@ import java.io.*;
  
 // Implementation of Bubble Sort
 
-class BubbleSort
+public class BubbleSort
 {
 
-    public void bubblesort() throws IOException
+    public int[] bubblesort(int [] arr)
     {
-
-        System.out.println("Enter numbers : ");
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String s [] = br.readLine().split("\\s+");
-        int arr[] = new int[s.length];
-
-        for (int i = 0; i < s.length; i++) {
-            arr[i] = Integer.parseInt(s[i]);
-        }
 
         int n = arr.length;
         int i, j, temp;
@@ -42,6 +33,8 @@ class BubbleSort
 
         for (i = 0; i < n; i++)
             System.out.print(arr[i] + " ");
+
+        return arr;
 
     }
 }

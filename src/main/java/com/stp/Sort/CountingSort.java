@@ -4,23 +4,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // Implementation of Counting Sort
-class CountingSort {
+public class CountingSort {
 	
-	public void countingsort() throws IOException
+	public int[] countingsort(int [] arr)
 	{
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String s[] = br.readLine().split("\\s+");
-        char arr[] = new char[s.length];
-
-        for (int i = 0; i < s.length; i++) {
-            arr[i] = s[i].charAt(0);
-        }
 
         int n = arr.length;
 
         // The output character array that will have sorted arr
-		char output[] = new char[n];
+		int output[] = new int[n];
 
 		// Create a count array to store count of individual
 		// characters and initialize count array as 0
@@ -52,7 +44,9 @@ class CountingSort {
 		
 		System.out.print("Sorted character array is ");
 		for (int i = 0; i < arr.length; ++i)
-			System.out.print(arr[i]);
+			System.out.print(arr[i]+" ");
+
+		return arr;
 	}
 }
 
