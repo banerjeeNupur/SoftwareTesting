@@ -1,21 +1,20 @@
-import com.stp.Conversion.HexToOct;
-import com.stp.Maths.Area;
-import com.stp.Maths.GCD;
-import com.stp.Maths.MagicSquare;
-import com.stp.Maths.PythagoreanTriple;
+import com.stp.Conversion.*;
+import com.stp.Maths.*;
+import com.stp.Misc.*;
+import com.stp.Search.*;
 
-import java.util.Scanner;
+
+import java.util.*;
 
 public class MainApplication {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Select option: ");
+        System.out.println("Select option:\n1. Math\n2. Conversion\n3. Search\n4. Sort\n5. Misc");
         int choice = sc.nextInt();
         int ch=0;
         switch (choice){
-            case 1: System.out.println("Maths");
-                    System.out.println("Enter choice: ");
+            case 1: System.out.println("Enter choice:\n1. GCD\n2. Area\n3. Pythagorean Triplet\n4. Magic Square\n5. Prime Factors ");
                     ch = sc.nextInt();
                     switch (ch){
                         case 1: // GCD;
@@ -25,16 +24,16 @@ public class MainApplication {
                             int num2 = sc.nextInt();
                             GCD gcd = new GCD();
                             int gcd_res = gcd.gcd(num1,num2);
-                            System.out.println("GCD: "+gcd_res);
                             break;
 
                         case 2: // Area;
                             System.out.println("Enter choice to calculate surface area:\n1. Cube"+
-                                    "\n2. Sphere \n3. Cone \n4. Hemisphere \n5. Cylinder");
+                                    "\n2. Sphere \n3. Cone \n4. Hemisphere \n5. Cylinder\n");
 
                             ch = sc.nextInt();
-                            System.out.println("Enter dimensions: ");
-                            String st[] = sc.nextLine().split("\\s+");
+                            System.out.println("Enter dimensions:");
+
+                            String st[] = sc.next().split("\\s+");
                             double a = Double.parseDouble(st[0]);
                             double b=0;
                             if(st.length>1){
@@ -42,23 +41,22 @@ public class MainApplication {
                             }
 
                             Area area = new Area();
-                            double area_res = 0;
+
                             if(ch==1){
-                                area_res = area.area(1,a,0);
+                                 area.area(1,a,0);
                             }
                             else if(ch==2){
-                                area_res = area.area(2,a,0);
+                                 area.area(2,a,0);
                             }
                             else if(ch==3){
-                                area_res = area.area(3,a,b);
+                                 area.area(3,a,b);
                             }
                             else if(ch==4){
-                                area_res = area.area(4,a,0);
+                                 area.area(4,a,0);
                             }
                             else if(ch==5){
-                                area_res = area.area(5,a,b);
+                                 area.area(5,a,b);
                             }
-                            System.out.println("Surface Area: "+area_res);
                             break;
 
                         case 3: //Pythagorean Triplet
@@ -69,7 +67,6 @@ public class MainApplication {
                             int z = Integer.parseInt(s[2]);
                             PythagoreanTriple pythagoreanTriple = new PythagoreanTriple();
                             boolean pythagorean_res =  pythagoreanTriple.pythagoreantriple(x,y,z);
-                            System.out.println("The triplet is pythagorean: "+pythagorean_res);
                             break;
 
                         case 4 : // Magic Square;
@@ -81,21 +78,35 @@ public class MainApplication {
                         break;
 
                         case 5: // Prime Factorization;
+                            System.out.println("Enter number: ");
+                            int prime_factor = sc.nextInt();
+                            List<Integer> list = new PrimeFactorization().primeFactorization(prime_factor);
                             break;
                     }
             break;
 
-            case 2: System.out.println("Conversion");
-            System.out.println("Enter choice: ");
+            case 2: System.out.println("Enter choice:\n1. Any to Any\n2. Binary to Decimal\n3. Hex to Octal ");
             ch = sc.nextInt();
             switch(ch){
                 case 1: // Any to Any
+                    System.out.println("Enter number, source base, dest base: ");
+                    String sd[] = sc.next().split("\\s+");
+                    int ca = Integer.parseInt(sd[0]);
+                    int cb = Integer.parseInt(sd[1]);
+                    int cc = Integer.parseInt(sd[2]);
+                    new AnyToAny().anyToAny(ca,cb,cc);
                     break;
 
-                case 2: // Binary to hexadecimal
+                case 2: // Binary to decimal
+                    System.out.println("Enter number: ");
+                    int bn = sc.nextInt();
+                    new BinaryToDecimal().binarytodecimal(bn);
                     break;
 
                 case 3: // Hex to Octal
+                    System.out.println("Enter number: ");
+                    String hs = sc.next();
+                    new HexToOct().hextooct(hs);
                     break;
             }
             break;
@@ -103,11 +114,23 @@ public class MainApplication {
             case 3: System.out.println("Search");
             System.out.println("Enter choice: ");
             ch = sc.nextInt();
+
+            System.out.println("Enter numbers: ");
+            String bs[] = sc.next().split("\\s+");
+            int arr[] = new int[bs.length];
+            for(int k=0;k<bs.length;k++){
+                arr[k] = Integer.parseInt(bs[k]);
+            }
+            System.out.println("Enter target: ");
+            int target = sc.nextInt();
+
             switch (ch){
                 case 1: // Binary
+                    new SearchBinary().binarysearch(arr,target);
                     break;
 
                 case 2: // Linear
+                    new SearchLinear().linearsearch(arr,target);
                     break;
             }
             break;
@@ -130,8 +153,14 @@ public class MainApplication {
                 ch = sc.nextInt();
                 switch (ch){
                     case 1: // Leap Year
+                        System.out.println("Enter year: ");
+                        int ln = sc.nextInt();
+                        new LeapYear().leapyear(ln);
                         break;
                     case 2: // Nth Ugly Number
+                        System.out.println("Enter number: ");
+                        int nn = sc.nextInt();
+                        new NthUglyNumber().nthUglyNumber(nn);
                         break;
                 }
             break;

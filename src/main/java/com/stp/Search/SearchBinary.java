@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 // Iterative Binary Search
 // Returns index of x if it is present in arr[]
 
-class BinarySearch {
+public class SearchBinary {
 	
 	public int binarysearch (int arr[], int x)
 	{

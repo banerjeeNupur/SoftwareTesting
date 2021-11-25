@@ -1,35 +1,46 @@
 package com.stp.Maths;
 
-import java.util.Scanner;
+
+import java.util.*;
+
 
 public class PrimeFactorization {
 
-    public void primeFactorization(){
+    public List<Integer> primeFactorization(int n){
 
-        System.out.println("## all prime factors ##");
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = scanner.nextInt();
         System.out.print(("printing factors of " + n + " : "));
 
+        List<Integer> res = new ArrayList<>();
+        int flag=0;
 
         while (n % 2 == 0) {
-            System.out.print(2 + " ");
+            if(flag==0){
+                res.add(2);
+                flag=1;
+            }
             n /= 2;
         }
 
+        flag=0;
         for (int i = 3; i <= Math.sqrt(n); i += 2) {
             while (n % i == 0) {
-                System.out.print(i + " ");
+                if(flag==0){
+                    res.add(i);
+                    flag=1;
+                }
                 n /= i;
             }
         }
 
         if (n > 2) {
-            System.out.print(n);
+            res.add(n);
         }
-        scanner.close();
 
+        for (int v : res) {
+            System.out.print(v+" ");
+        }
+
+        return res;
 
     }
 
