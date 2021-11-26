@@ -37,7 +37,7 @@ public class Area {
                 break;
 
             case 4:
-                if(a<0 || b<0) {
+                if(a<0) {
                     System.out.println("sides cannot be negative");
                     ans = -1;
                     break;
