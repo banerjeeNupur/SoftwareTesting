@@ -95,11 +95,12 @@ public class MainApplication {
                     ch = sc.nextInt();
                     switch(ch){
                         case 1: // Any to Any
-                            System.out.println("Enter number, source base, dest base: ");
-                            String sd[] = sc.next().split("\\s+");
-                            int ca = Integer.parseInt(sd[0]);
-                            int cb = Integer.parseInt(sd[1]);
-                            int cc = Integer.parseInt(sd[2]);
+                            System.out.println("Enter number: ");
+                            int ca = sc.nextInt();
+                            System.out.println("Source base: ");
+                            int cb = sc.nextInt();
+                            System.out.println("Dest base: ");
+                            int cc = sc.nextInt();
                             new AnyToAny().anyToAny(ca,cb,cc);
                             break;
 
@@ -121,6 +122,7 @@ public class MainApplication {
 
                 case 3: System.out.println("Enter choice:\n1. Binary Search\n2. Linear Search\n3. Menu ");
                     ch = sc.nextInt();
+                    if(ch==3) continue start_main;
                     System.out.println("Enter array length: ");
                     int search_len = sc.nextInt();
                     int search_arr[] = new int[search_len];

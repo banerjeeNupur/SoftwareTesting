@@ -9,7 +9,7 @@ public class GCD {
 
         int ans=0;
         if (num1 < 0 || num2 < 0) {
-            throw new ArithmeticException();
+            return -1;
         }
 
         if (num1 == 0 || num2 == 0) {
